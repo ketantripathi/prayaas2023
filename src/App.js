@@ -5,6 +5,7 @@ import Navbar from './compo/Navbar';
 import Home from './compo/Home';
 import HomeCarousel from './compo/HomeCarousel';
 import React, { useState, useEffect } from 'react';
+import TimeTrail from './compo/TimeTrial'
 function App() {
     const [count, setCount] = useState(0); 
     const [navcolor, setnavcolor] = useState('bg-transparent')
@@ -36,6 +37,11 @@ function App() {
         {/* <Navbar/> */}
         <Nav navcolor={navcolor}/>
         <HomeCarousel count={count}/>
+        
+        <br/>
+        <br/>
+        <TimeTrail />
+        <br/>
     </div>
   );
 }
